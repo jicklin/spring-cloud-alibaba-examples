@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: sentinel-consumer
+  cloud:
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:5003
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+feign:
+  sentinel:
+    enabled: true
+
+
